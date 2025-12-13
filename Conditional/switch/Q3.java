@@ -1,14 +1,24 @@
-package switch;
 
+
+import java.util.Scanner;
 public class Q3 {
-    public static void main(String args[]){
+     public static void main(String args[]){
         Scanner sc=new Scanner(System.in);
-        int d=sc.nextInt();
-        if(d>=1 && d<=5)
-            System.out.println("Weekday");
-        else if(d==6 || d==7)
-            System.out.println("Weekend");
-        else
-            System.out.println("Invalid");
+        int a=sc.nextInt();
+        switch(a){
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+                System.out.println("Weekday");
+                break;
+            case 6:
+            case 7:
+                System.out.println("Weekend");
+                break;
+            default:
+                System.out.println("Invalid put correct number");
+        }
     }
 }
